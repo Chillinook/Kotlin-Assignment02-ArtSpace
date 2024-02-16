@@ -9,9 +9,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-//import androidx.compose.foundation.layout.FlowRowScopeInstance.weight
-//import androidx.compose.foundation.layout.FlowColumnScopeInstance.weight
-
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
@@ -74,16 +71,11 @@ fun MotoSpaceApp() {
 fun MotoSpace( CardList: List<Moto>){
     var motoNum by remember { mutableStateOf(0) }
 
-
     Column {
         Row (
-//            verticalAlignment = Alignment.CenterVertically,
-//            horizontalArrangement = Arrangement.Center,
             modifier = Modifier
-//                .weight(3.8f)
                 .padding(50.dp)
-        ){
-//
+        ){//
             Image(
                 contentScale = ContentScale.Fit,
                 modifier = Modifier
@@ -95,15 +87,7 @@ fun MotoSpace( CardList: List<Moto>){
         }
         Row (
             modifier = Modifier
-                .padding(20.dp),
-//                .fillMaxSize(),
-//                .weight(1.2f)
-//                .fillMaxWidth(),
-//                .fillMaxHeight(),
-            horizontalArrangement = Arrangement.Center,
-            verticalAlignment = Alignment.Top,
-
-
+                .padding(20.dp)
         ){
             Column(
                 verticalArrangement = Arrangement.Center,
@@ -112,11 +96,8 @@ fun MotoSpace( CardList: List<Moto>){
                     .fillMaxWidth()
                     .fillMaxHeight(0.60f)
                     .padding(10.dp)
-
             ) {
                 Text(
-//                    modifier = Modifier
-//                        .padding(10.dp),
                     text = stringResource(id = CardList[motoNum].riderNameId ),
                     fontSize = 30.sp
                 )
@@ -128,10 +109,9 @@ fun MotoSpace( CardList: List<Moto>){
         }
         Row (
             horizontalArrangement = Arrangement.SpaceAround,
-//            verticalAlignment = Alignment.Bottom,
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(top = 20.dp)
+                .padding(top = 30.dp)
         ){
             Button(
                 modifier = Modifier
@@ -141,7 +121,8 @@ fun MotoSpace( CardList: List<Moto>){
                         motoNum--
                     if (motoNum < 0 )
                         motoNum = 0
-                }) {
+                })
+                {
                 Text(text = "Previous")
             }
             Button(
@@ -152,7 +133,7 @@ fun MotoSpace( CardList: List<Moto>){
                         motoNum++
                     if (motoNum == CardList.size )
                         motoNum = 0
-                          })
+                })
                {
                 Text(text = "Next")
             }
