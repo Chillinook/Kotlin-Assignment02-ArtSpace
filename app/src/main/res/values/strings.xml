@@ -1,16 +1,18 @@
 <resources>
     <string name="app_name">Assignment02_ArtSpace</string>
-        <string name="rider1">I am strong.</string>
-        <string name="rider2">I believe in myself.</string>
-        <string name="rider3">Each day is a new opportunity to grow and be a better version of myself.</string>
-        <string name="rider4">Every challenge in my life is an opportunity to learn from.</string>
-        <string name="rider5">I have so much to be grateful for.</string>
-        <string name="rider6">Good things are always coming into my life.</string>
+        <string name="rider1">Fabio Quartararo.</string>
+        <string name="rider2">Luca Marini.</string>
+        <string name="rider3">Johann Zarco.</string>
+        <string name="rider4">Joan Mir.</string>
+        <string name="rider5">Fabio Di Giannantonio.</string>
+        <string name="rider6">Álex Rins.</string>
+        <string name="rider7">Marco Bezzecchi.</string>
 
-        <string name="riderDate1">I am strong.</string>
-        <string name="riderDate2">I believe in myself.</string>
-        <string name="riderDate3">Each day is a new opportunity to grow and be a better version of myself.</string>
-        <string name="riderDate4">Every challenge in my life is an opportunity to learn from.</string>
-        <string name="riderDate5">I have so much to be grateful for.</string>
-        <string name="riderDate6">Good things are always coming into my life.</string>
+        <string name="riderDate1">1999 Nice, France.</string>
+        <string name="riderDate2">1997 Urbino, Italy.</string>
+        <string name="riderDate3">1990 Cannes, France.</string>
+        <string name="riderDate4">1997 Palma, Spain.</string>
+        <string name="riderDate5">1998 Rome, Italy.</string>
+        <string name="riderDate6">1995 Barcelona, Spain.</string>
+        <string name="riderDate7">1998 Rimini, Italy.</string>
 </resources>
